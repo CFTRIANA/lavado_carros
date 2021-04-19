@@ -1,0 +1,17 @@
+
+ 
+package INICIO_PROGRAMA;
+import Modelo_Controlador_vista.Controlador;
+
+// el borrador mejor hecho , ya que hay temas que no he visto y debo mejorar 
+
+public class Lavado_autos {
+
+    public static void main(String[] args) {
+   
+        Controlador.mostrar();
+        
+        
+    }
+    
+}
