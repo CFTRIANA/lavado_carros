@@ -1,0 +1,31 @@
+package Modelo_Controlador_vista;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class Modelo {
+   
+       private String nombre;
+       
+    private final  ArrayList<Modelo> servicios = new ArrayList();
+       
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+       
+    public String toString(){
+       return "SERVICIO TIPO " +this.nombre;  
+    }
+    
+    public void agregarServicio(Modelo servicio1){
+        servicios.add(servicio1);
+        
+
+    }
+    
+}
