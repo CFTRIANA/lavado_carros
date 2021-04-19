@@ -1,0 +1,124 @@
+
+package Modelo_Controlador_vista;
+
+import javax.swing.JCheckBox;
+import javax.swing.JOptionPane;
+
+        
+
+
+public class Controlador {
+    
+    public static Vista ventana= new Vista();
+    
+    public static void mostrar (){ ventana.setVisible(true);}
+    
+    public static void ocultar (){ ventana.setVisible(false);}
+    
+    public  static void Bregistrar(){
+        
+        JCheckBox Lbasico = ventana .getLbasico();
+         JCheckBox Lespecial= ventana .getLespecial();
+         JCheckBox Dbasica = ventana .getDbasica();
+         JCheckBox Davanzada = ventana .getDavanzada();
+         JCheckBox Combo1 = ventana .getCombo_1();
+         JCheckBox Combo2 = ventana .getCombo2();
+         JCheckBox Combo3 = ventana .getCombo3();
+         JCheckBox automovil = ventana.getAutomovil();
+         JCheckBox camioneta = ventana.getCamioneta();
+         
+        
+        String Operario = ventana.getNoperario().getText();
+        
+        if (Lbasico.isSelected()) {
+            JOptionPane.showConfirmDialog(null,"el modo es lavado basico");
+            
+               if(automovil.isSelected()){
+                    
+                   JOptionPane.showConfirmDialog(null,"AUTOMOVIL");
+
+                }else if(camioneta.isSelected()){
+                      
+               }
+            
+            
+            
+        } else if (Lespecial.isSelected()) {
+         JOptionPane.showConfirmDialog(null,"el modo es lavado especial ");
+         
+         if(automovil.isSelected()){
+                    
+               }else if(camioneta.isSelected()){
+                      
+               }
+         
+        
+        }  else if (Davanzada.isSelected()) {
+         JOptionPane.showConfirmDialog(null,"el modo es desinfeccion avanzada ");
+         
+         if(automovil.isSelected()){
+                    
+               }else if(camioneta.isSelected()){
+                      
+               }
+         
+        
+        }else if (Dbasica.isSelected()) {
+         JOptionPane.showConfirmDialog(null,"el modo es desinfeccion basica ");
+         
+         if(automovil.isSelected()){
+                    
+               }else if(camioneta.isSelected()){
+                   
+                   
+               }
+         
+        
+        }  else if (Combo1.isSelected()) {
+         JOptionPane.showConfirmDialog(null,"el modo es combo 1 ");
+         
+         if(automovil.isSelected()){
+                    
+               }else if(camioneta.isSelected()){
+                      
+               }
+        
+        }else if (Combo2.isSelected()) {
+         JOptionPane.showConfirmDialog(null,"el modo es combo 2 ");
+         
+         if(automovil.isSelected()){
+                    
+               }else if(camioneta.isSelected()){
+                      
+               }
+         
+        
+        }  else if (Combo3.isSelected()) {
+         JOptionPane.showConfirmDialog(null,"el modo es combom 3 ");
+         
+         if(automovil.isSelected()){
+                    
+               }else if(camioneta.isSelected()){
+                      
+               }
+         
+        
+        }
+        
+        
+        
+        
+        
+    }
+    public static void Bbuscar(){
+        
+        String Finicio = ventana.getFinicio().getText();
+        
+        String Ffinal = ventana.getFfinal().getText();
+        
+
+        
+    }
+    
+    
+}
