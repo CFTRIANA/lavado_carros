@@ -1,0 +1,549 @@
+package Modelo_Controlador_vista;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Vista extends javax.swing.JFrame {
+
+    public Vista() {
+        initComponents();
+    }
+
+   
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        Servicios = new javax.swing.ButtonGroup();
+        Gbuscar = new javax.swing.ButtonGroup();
+        TipoAuto = new javax.swing.ButtonGroup();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        Lbasico = new javax.swing.JCheckBox();
+        Lespecial = new javax.swing.JCheckBox();
+        Dbasica = new javax.swing.JCheckBox();
+        Davanzada = new javax.swing.JCheckBox();
+        Combo_1 = new javax.swing.JCheckBox();
+        Combo2 = new javax.swing.JCheckBox();
+        Combo3 = new javax.swing.JCheckBox();
+        Automovil = new javax.swing.JCheckBox();
+        Camioneta = new javax.swing.JCheckBox();
+        Noperario = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        Ffinal = new javax.swing.JTextField();
+        Noperarioingre = new javax.swing.JTextField();
+        Finicio = new javax.swing.JTextField();
+        Pfecha = new javax.swing.JCheckBox();
+        Pnombre = new javax.swing.JCheckBox();
+        jLabel3 = new javax.swing.JLabel();
+        Pservicio = new javax.swing.JCheckBox();
+        jLabel4 = new javax.swing.JLabel();
+        Busqueda = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        Registrar = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Dialog", 3, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 51, 0));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText(" AUTO LAVADO -CFTR-");
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel2.setText("SERVICIOS OFERTADOS:");
+
+        Servicios.add(Lbasico);
+        Lbasico.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
+        Lbasico.setForeground(new java.awt.Color(0, 51, 102));
+        Lbasico.setText("Lavado Básico");
+
+        Servicios.add(Lespecial);
+        Lespecial.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
+        Lespecial.setForeground(new java.awt.Color(0, 51, 102));
+        Lespecial.setText("Lavado especial");
+
+        Servicios.add(Dbasica);
+        Dbasica.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
+        Dbasica.setForeground(new java.awt.Color(0, 51, 102));
+        Dbasica.setText("Desinfección básica");
+
+        Servicios.add(Davanzada);
+        Davanzada.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
+        Davanzada.setForeground(new java.awt.Color(0, 51, 102));
+        Davanzada.setText("Desinfección avanzada");
+
+        Servicios.add(Combo_1);
+        Combo_1.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
+        Combo_1.setForeground(new java.awt.Color(0, 51, 102));
+        Combo_1.setText(" Combo 1 ");
+        Combo_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Combo_1ActionPerformed(evt);
+            }
+        });
+
+        Servicios.add(Combo2);
+        Combo2.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
+        Combo2.setForeground(new java.awt.Color(0, 51, 102));
+        Combo2.setText(" Combo 2");
+
+        Servicios.add(Combo3);
+        Combo3.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
+        Combo3.setForeground(new java.awt.Color(0, 51, 102));
+        Combo3.setText(" Combo 3 ");
+
+        TipoAuto.add(Automovil);
+        Automovil.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 16)); // NOI18N
+        Automovil.setForeground(new java.awt.Color(0, 102, 102));
+        Automovil.setText("Automovil");
+
+        TipoAuto.add(Camioneta);
+        Camioneta.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 14)); // NOI18N
+        Camioneta.setForeground(new java.awt.Color(0, 102, 102));
+        Camioneta.setText("Camioneta");
+        Camioneta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CamionetaActionPerformed(evt);
+            }
+        });
+
+        Noperario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NoperarioActionPerformed(evt);
+            }
+        });
+
+        jPanel1.setForeground(new java.awt.Color(0, 51, 102));
+
+        Noperarioingre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NoperarioingreActionPerformed(evt);
+            }
+        });
+
+        Finicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FinicioActionPerformed(evt);
+            }
+        });
+
+        Gbuscar.add(Pfecha);
+        Pfecha.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        Pfecha.setText("RANGO ENTRE FECHAS");
+
+        Gbuscar.add(Pnombre);
+        Pnombre.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        Pnombre.setText("NOMBRE DEL OPERARIO");
+
+        jLabel3.setBackground(new java.awt.Color(255, 51, 51));
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel3.setText("BUSQUEDA POR :");
+
+        Gbuscar.add(Pservicio);
+        Pservicio.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+        Pservicio.setText("SERVICIO");
+
+        jLabel4.setFont(new java.awt.Font("Candara", 0, 18)); // NOI18N
+        jLabel4.setText("SI ES POR SERVICIO ,SELECCIONELO EN LA PARTE SUPERIOR Y MARQUE LA CASILLA \"SERVICIO\"");
+
+        Busqueda.setBackground(new java.awt.Color(0, 102, 102));
+        Busqueda.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        Busqueda.setForeground(new java.awt.Color(255, 255, 255));
+        Busqueda.setText("BUSQUEDA");
+        Busqueda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BusquedaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(65, 65, 65)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Pnombre)
+                    .addComponent(Pfecha))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(Noperarioingre)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Finicio, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(Ffinal, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(31, 31, 31))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(50, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(207, 207, 207))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 743, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(66, 66, 66)
+                .addComponent(Pservicio)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Ffinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Finicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Pfecha))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Noperarioingre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Pnombre))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Pservicio)
+                    .addComponent(Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34))
+        );
+
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel5.setText("NOMBRE DEL OPERARIO ");
+
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel6.setText("TIPO DE AUTOMOVIL :");
+
+        Registrar.setBackground(new java.awt.Color(0, 204, 204));
+        Registrar.setFont(new java.awt.Font("DialogInput", 1, 24)); // NOI18N
+        Registrar.setText("REGISTRAR SERVICIO");
+        Registrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegistrarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 604, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(608, 608, 608))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Lbasico)
+                        .addGap(110, 110, 110)
+                        .addComponent(Lespecial)
+                        .addGap(132, 132, 132)
+                        .addComponent(Dbasica)
+                        .addGap(61, 61, 61)
+                        .addComponent(Davanzada)
+                        .addGap(78, 78, 78)
+                        .addComponent(Combo_1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Automovil)
+                                .addGap(136, 136, 136)
+                                .addComponent(Camioneta)))
+                        .addGap(174, 174, 174)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Noperario, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(313, 313, 313)
+                        .addComponent(Registrar)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(Combo2)
+                        .addGap(84, 84, 84)
+                        .addComponent(Combo3)
+                        .addGap(91, 91, 91))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel2)
+                        .addGap(42, 42, 42)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Lbasico)
+                            .addComponent(Lespecial)
+                            .addComponent(Dbasica)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(96, 96, 96)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Combo_1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Combo2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Combo3, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Davanzada)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(64, 64, 64)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel6)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(128, 128, 128)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(Automovil)
+                                    .addComponent(Camioneta)
+                                    .addComponent(Noperario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Registrar)
+                        .addGap(70, 70, 70))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void FinicioActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+    }                                       
+
+    private void NoperarioingreActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        // TODO add your handling code here:
+    }                                              
+
+    private void NoperarioActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+    }                                         
+
+    private void RegistrarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+       // mandamos el metodo a el controlador
+       
+       Controlador.Bregistrar();
+       
+       
+    }                                         
+
+    private void Combo_1ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+    }                                       
+
+    private void CamionetaActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+    }                                         
+
+    private void BusquedaActionPerformed(java.awt.event.ActionEvent evt) {                                         
+      
+        
+    }                                        
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Vista.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Vista().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JCheckBox Automovil;
+    private javax.swing.JButton Busqueda;
+    private javax.swing.JCheckBox Camioneta;
+    private javax.swing.JCheckBox Combo2;
+    private javax.swing.JCheckBox Combo3;
+    private javax.swing.JCheckBox Combo_1;
+    private javax.swing.JCheckBox Davanzada;
+    private javax.swing.JCheckBox Dbasica;
+    private javax.swing.JTextField Ffinal;
+    private javax.swing.JTextField Finicio;
+    private javax.swing.ButtonGroup Gbuscar;
+    private javax.swing.JCheckBox Lbasico;
+    private javax.swing.JCheckBox Lespecial;
+    private javax.swing.JTextField Noperario;
+    private javax.swing.JTextField Noperarioingre;
+    private javax.swing.JCheckBox Pfecha;
+    private javax.swing.JCheckBox Pnombre;
+    private javax.swing.JCheckBox Pservicio;
+    private javax.swing.JButton Registrar;
+    private javax.swing.ButtonGroup Servicios;
+    private javax.swing.ButtonGroup TipoAuto;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
+    // End of variables declaration                   
+
+    public JTextField getFfinal() {
+        return Ffinal;
+    }
+
+    public JTextField getFinicio() {
+        return Finicio;
+    }
+
+    public JTextField getNoperario() {
+        return Noperario;
+    }
+
+    public JTextField getNoperarioingre() {
+        return Noperarioingre;
+    }
+
+    public JCheckBox getAutomovil() {
+        return Automovil;
+    }
+
+    public JButton getBusqueda() {
+        return Busqueda;
+    }
+
+    public JCheckBox getCamioneta() {
+        return Camioneta;
+    }
+
+    public JCheckBox getCombo2() {
+        return Combo2;
+    }
+
+    public JCheckBox getCombo3() {
+        return Combo3;
+    }
+
+    public JCheckBox getCombo_1() {
+        return Combo_1;
+    }
+
+    public JCheckBox getDavanzada() {
+        return Davanzada;
+    }
+
+    public JCheckBox getDbasica() {
+        return Dbasica;
+    }
+
+    public ButtonGroup getGbuscar() {
+        return Gbuscar;
+    }
+
+    public JCheckBox getLbasico() {
+        return Lbasico;
+    }
+
+    public JCheckBox getLespecial() {
+        return Lespecial;
+    }
+
+    public JCheckBox getPfecha() {
+        return Pfecha;
+    }
+
+    public JCheckBox getPnombre() {
+        return Pnombre;
+    }
+
+    public JCheckBox getPservicio() {
+        return Pservicio;
+    }
+
+    public JButton getRegistrar() {
+        return Registrar;
+    }
+
+    public ButtonGroup getServicios() {
+        return Servicios;
+    }
+
+    public ButtonGroup getTipoAuto() {
+        return TipoAuto;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public JLabel getjLabel3() {
+        return jLabel3;
+    }
+
+    public JLabel getjLabel4() {
+        return jLabel4;
+    }
+
+    public JLabel getjLabel5() {
+        return jLabel5;
+    }
+
+    public JLabel getjLabel6() {
+        return jLabel6;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+    
+}
